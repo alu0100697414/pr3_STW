@@ -3,7 +3,6 @@ var expect = chai.expect;
 describe("Test para ConverTemp", function() {
 
   var fin = document.getElementById("resultado");
-  var ini = document.getElementById("inicial");
 
     it("Debería ser: 32e4F", function() {
       var temp = new Temperatura();
@@ -50,9 +49,11 @@ describe("Test para ConverTemp", function() {
     });
 
     it("convertir()", function() {
-      inicial.value = "0C";
-      convertir();
+      window.onload = function() {
+        inicial.value = "32.0576C";
+        convertir();
 
-      expect(resultado.innerHTML).to.equal("El resultado es: 32.0576 F");
+        expect(fin.innerHTML).to.equal("El resultado es: 32.0576 F");
+      }
     });
 });

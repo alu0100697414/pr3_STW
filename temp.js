@@ -57,8 +57,12 @@ Temperatura.prototype.conversor = function(){
 
 // Funcion conversor entre las distintas unidades
 function convertir(){
+  alert(inicial.value);
+
+  var ini = document.getElementById("inicial");
+
   var temperatura = new Temperatura();
-  temperatura.inicializador(inicial.value);
+  temperatura.inicializador(ini.value);
 
   resultado.innerHTML = temperatura.conversor();
 }
