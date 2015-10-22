@@ -17,7 +17,7 @@ En la rama "master" podrá encontrar todo el contenido de la práctica (ficheros
 - [Web de Github](http://alu0100697414.github.io/).
 - [Web del repositorio de la práctica](https://github.com/alu0100697414/pr3_STW/tree/master).
 - [Web de la práctica](http://alu0100697414.github.io/pr3_STW/).
-- [Web del recubrimiento (blanket)](http://alu0100697414.github.io/pr3_STW/test/test_blanket.html)
+- [Web del recubrimiento (blanket)](http://alu0100697414.github.io/pr3_STW/test/test_blanket.html).
 - [Web de Travis](https://travis-ci.org/alu0100697414/pr3_STW).
-- [Guía docente de la asignatura](http://eguia.ull.es/etsii/query.php?codigo=139264512)
+- [Guía docente de la asignatura](http://eguia.ull.es/etsii/query.php?codigo=139264512).
 - Contacto: alu0100697414@ull.edu.es
