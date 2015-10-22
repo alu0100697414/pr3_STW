@@ -37,6 +37,7 @@
     "karma-mocha": "^0.2.0",
     "mocha": "*",
     "karma-chai": "*",
-    "node-static": "~0.7.6"
+    "node-static": "~0.7.6",
+    "bower": "*"
   }
 }
