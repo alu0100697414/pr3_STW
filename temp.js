@@ -55,10 +55,14 @@ Temperatura.prototype.conversor = function(){
   }
 }
 
-// Funcion conversor entre las distintas unidades
-function convertir(){
-  var temperatura = new Temperatura();
-  temperatura.inicializador(inicial.value);
 
-  resultado.innerHTML = temperatura.conversor();
-}
+this.addEventListener('message', function(valor){
+
+  var temperatura = new Temperatura();
+  temperatura.inicializador(valor.data);
+
+  var res = temperatura.conversor();
+
+  this.postMessage(res);
+
+}, false);

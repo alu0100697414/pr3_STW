@@ -1,6 +1,6 @@
 "use strict";
 
-var = w;
+var w;
 
 if(typeof(Worker) !== "undefined"){
   if(typeof(w) == "undefined"){
@@ -14,5 +14,5 @@ function initWWorker(){
 }
 
 w.onmessage = function(event){
-    document.getElementById("resultado").innerHTML = event.data;  
+    document.getElementById("resultado").innerHTML = event.data;
 };
