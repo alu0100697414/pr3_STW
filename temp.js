@@ -55,6 +55,7 @@ Temperatura.prototype.conversor = function(){
   }
 }
 
+<<<<<<< HEAD
 // Funcion conversor entre las distintas unidades
 function convertir(){
   alert(inicial.value);
@@ -63,6 +64,16 @@ function convertir(){
 
   var temperatura = new Temperatura();
   temperatura.inicializador(ini.value);
+=======
 
-  resultado.innerHTML = temperatura.conversor();
-}
+this.addEventListener('message', function(valor){
+
+  var temperatura = new Temperatura();
+  temperatura.inicializador(valor.data);
+>>>>>>> master
+
+  var res = temperatura.conversor();
+
+  this.postMessage(res);
+
+}, false);
