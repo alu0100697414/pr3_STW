@@ -7,8 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node static-server",
-    "test": "./node_modules/karma/bin/karma start --single-run"
+    "karma": "./node_modules/karma/bin/karma start --single-run",
   },
   "repository": {
     "type": "git",
@@ -28,11 +27,16 @@
     "gulp-concat": "^2.6.0",
     "gulp-minify-css": "^1.2.1",
     "gulp-minify-html": "^1.0.4",
+    "gulp-mocha": "*",
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.6",
-    "gulp-mocha": "*",
+    "karma": "~0.12",
+    "karma-chrome-launcher": "*",
+    "karma-firefox-launcher": "*",
+    "karma-html2js-preprocessor": "*",
+    "karma-mocha": "^0.2.0",
     "mocha": "*",
-    "node-static": "~0.7.6",
-    "karma": "~0.12"
+    "karma-chai": "*",
+    "node-static": "~0.7.6"
   }
 }

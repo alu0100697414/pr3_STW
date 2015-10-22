@@ -50,9 +50,11 @@ describe("Test para ConverTemp", function() {
     });
 
     it("convertir()", function() {
-      inicial.value = "0C";
-      convertir();
+      window.onload = function() {
+        ini.value = "0C";
+        convertir();
 
-      expect(resultado.innerHTML).to.equal("El resultado es: 32.0576 F");
+        expect(resultado.innerHTML).to.equal("El resultado es: 32.0576 F");
+      }
     });
 });
